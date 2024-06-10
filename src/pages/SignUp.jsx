@@ -27,7 +27,7 @@ const SignUp = () => {
     axios
       .request({
         method: "POST",
-        url: "https://netflix-server.azurewebsites.net//auth/verify",
+        url: "https://netflix-server.azurewebsites.net/auth/verify",
         headers: {
           "Content-Type": "Application/json",
         },

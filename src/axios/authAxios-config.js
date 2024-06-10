@@ -2,7 +2,7 @@ import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 
 const authAxios = axios.create({
-  baseURL: "https://netflix-server.azurewebsites.net/",
+  baseURL: "https://netflix-server.azurewebsites.net",
   withCredentials: true,
   headers: {
     "Content-Type": "Application/json",
@@ -12,7 +12,7 @@ const authAxios = axios.create({
 async function getAccessToken() {
   await axios
     .get("/auth/access-token", {
-      baseURL: "https://netflix-server.azurewebsites.net/",
+      baseURL: "https://netflix-server.azurewebsites.net",
       withCredentials: true,
       headers: {
         "Content-Type": "Application/json",

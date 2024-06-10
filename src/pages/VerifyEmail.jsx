@@ -16,7 +16,7 @@ const VerifyEmail = () => {
   function handleClick(e) {
     axios
       .request({
-        url: "https://netflix-server.azurewebsites.net//auth/verify-email",
+        url: "https://netflix-server.azurewebsites.net/auth/verify-email",
         method: "POST",
         headers: {
           "Content-Type": "Application/json",
